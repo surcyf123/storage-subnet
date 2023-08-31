@@ -36,7 +36,7 @@ AI models are scored based on a combination of the following metrics:
 ## 4. Ranking and Rewards
 
 ### Ranking Algorithm
-The overall score for each model will be comprised of an exponential moving average score with each score being \\\\( \\text{reward at time 0} \\times e^{-\\text{time}} \\times \\text{relevance mask} \\\\), with decay of alpha = .05.  
+The overall score for each model will be comprised of an exponential moving average score with each score being `reward at time 0 * e ^ -time * relevance mask` with decay of alpha = .05.  
 The stake-weighted consensus point of weights among validators will linearly correlate to the amount of tao distributed to each miner.
 
 ---
